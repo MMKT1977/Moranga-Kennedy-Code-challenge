@@ -102,6 +102,20 @@
       "category": "baridi",
       "amount": 98,
       "id": 17
+    },
+    {
+      "date": "2025-02-15",
+      "description": "mayai",
+      "category": "broken",
+      "amount": 67,
+      "id": 18
+    },
+    {
+      "date": "2025-02-27",
+      "description": "paid",
+      "category": "salary",
+      "amount": 30000,
+      "id": 19
     }
   ]
 }

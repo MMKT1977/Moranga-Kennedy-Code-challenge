@@ -1,14 +1,20 @@
 import React from "react";
 
-function Search() {
+function Search({searchTerm, setSearchTerm}) {
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
     <div className="ui large fluid icon input">
       <input
         type="text"
         placeholder="Search your Recent Transactions"
-        onChange={() => console.log("Searching...")}
+        value={searchTerm}
+        onChange={handleChange}
       />
-      <i className="circular search link icon"></i>
+      <i className="circular search link icon" aria-label="Search"></i>
     </div>
   );
 }
