@@ -9,16 +9,13 @@ function AddTransactionForm({ addTransaction }) {
     amount: "",
   });
 
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value,});
   }
-  function handleSubmit(event) {
-    event.preventDefault(); 
+  
+  function handleSubmit(e) {
+    e.preventDefault(); 
 
     const newTransaction = {
       date: formData.date,

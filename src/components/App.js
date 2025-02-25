@@ -15,21 +15,15 @@ function App() {
     fetch("http://localhost:8001/transactions", {
       method: "POST",
       headers: {
-        "Content-Type": "application.json",
+        "Content-Type": "application/json",
       },
       body:JSON.stringify(newTransaction),
     })
-    .then(function(response){
-      return response.json();
-    })
-    .then(function (data) {
-      
-      setTransactions(function (prevTransactions) {
-        return [...prevTransactions, data];
-      });
-    });
+      .then((response) => response.json())
+      .then((data) => setTransactions([...transactions, data]));
 
   }
+
   return (
     <div className="ui raised segment">
       <div className="ui segment violet inverted">

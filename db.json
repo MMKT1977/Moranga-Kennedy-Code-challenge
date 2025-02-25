@@ -92,6 +92,16 @@
     },
     {
       "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "date": "2025-02-27",
+      "description": "water",
+      "category": "baridi",
+      "amount": 98,
+      "id": 17
     }
   ]
 }
