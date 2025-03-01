@@ -5,11 +5,15 @@ import AddTransactionForm from "./AddTransactionForm";
 
 function AccountContainer({transactions, addTransaction, searchTerm , setSearchTerm}) {
 
+  const filteredTransactions = transactions.filter((transaction) =>
+    transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div>
       <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       <AddTransactionForm addTransaction={addTransaction}/>
-      <TransactionsList transactions={transactions}/>
+      <TransactionsList transactions={filteredTransactions}/>
     </div>
   );
 }

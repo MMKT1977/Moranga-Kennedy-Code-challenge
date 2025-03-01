@@ -85,18 +85,6 @@
       "amount": -975
     },
     {
-      "id": 13
-    },
-    {
-      "id": 14
-    },
-    {
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
       "date": "2025-02-27",
       "description": "water",
       "category": "baridi",
@@ -116,6 +104,13 @@
       "category": "salary",
       "amount": 30000,
       "id": 19
+    },
+    {
+      "date": "2025-02-28",
+      "description": "Food",
+      "category": "Daily Expenses",
+      "amount": 500,
+      "id": 20
     }
   ]
 }
